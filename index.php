@@ -8,7 +8,7 @@ $BOT_NAME = 'digitbox_bot';
 try {
     $telegram = new Longman\TelegramBot\Telegram($API_KEY, $BOT_NAME);
 
-    echo $telegram->setWebHook('http://digit-bot.herokuapp.com/hook.php');
+    echo $telegram->setWebHook('https://digit-bot.herokuapp.com/hook.php');
 } catch (Longman\TelegramBot\Exception\TelegramException $e) {
     echo $e->getMessage();
 }
