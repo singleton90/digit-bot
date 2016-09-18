@@ -1,0 +1,13 @@
+{
+    "name": "singleton90/digit-bot",
+    "type": "project",
+    "require": {
+        "longman/telegram-bot": "^0.35.0"
+    },
+    "authors": [
+        {
+            "name": "Anton A",
+            "email": "ant0ny@mail.ru"
+        }
+    ]
+}
