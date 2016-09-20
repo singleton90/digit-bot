@@ -2,7 +2,8 @@
     "name": "singleton90/digit-bot",
     "type": "project",
     "require": {
-        "longman/telegram-bot": "^0.35.0"
+        "longman/telegram-bot": "^0.35.0",
+        "irazasyed/telegram-bot-sdk": "^2.0"
     },
     "authors": [
         {

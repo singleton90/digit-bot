@@ -1,14 +1,9 @@
 <?php
 
-$loader = require __DIR__.'/vendor/autoload.php';
+use Telegram\Bot\Api;
 
-$API_KEY = '202559226:AAEu2P5-OTOZMIeSQFDsEF4jizZu2rcTkHM';
-$BOT_NAME = 'digitbox_bot';
+$telegram = new Api('202559226:AAEu2P5-OTOZMIeSQFDsEF4jizZu2rcTkHM');
 
-try {
-    $telegram = new Longman\TelegramBot\Telegram($API_KEY, $BOT_NAME);
+$response = $telegram->getUpdates();
 
-    echo $telegram->setWebHook('https://digit-bot.herokuapp.com/hook.php');
-} catch (Longman\TelegramBot\Exception\TelegramException $e) {
-    echo $e->getMessage();
-}
+var_dump($response);

@@ -10,9 +10,15 @@ class ComposerStaticInit476e9a21304d335e437c00aa5788c11a
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
+        '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'T' => 
+        array (
+            'Telegram\\Bot\\' => 13,
+        ),
         'P' => 
         array (
             'Psr\\Http\\Message\\' => 17,
@@ -25,6 +31,11 @@ class ComposerStaticInit476e9a21304d335e437c00aa5788c11a
         array (
             'Longman\\TelegramBot\\' => 20,
         ),
+        'I' => 
+        array (
+            'Illuminate\\Support\\' => 19,
+            'Illuminate\\Contracts\\' => 21,
+        ),
         'G' => 
         array (
             'GuzzleHttp\\Psr7\\' => 16,
@@ -34,6 +45,10 @@ class ComposerStaticInit476e9a21304d335e437c00aa5788c11a
     );
 
     public static $prefixDirsPsr4 = array (
+        'Telegram\\Bot\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/irazasyed/telegram-bot-sdk/src',
+        ),
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
@@ -45,6 +60,14 @@ class ComposerStaticInit476e9a21304d335e437c00aa5788c11a
         'Longman\\TelegramBot\\' => 
         array (
             0 => __DIR__ . '/..' . '/longman/telegram-bot/src',
+        ),
+        'Illuminate\\Support\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/support',
+        ),
+        'Illuminate\\Contracts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/contracts',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (
@@ -66,6 +89,13 @@ class ComposerStaticInit476e9a21304d335e437c00aa5788c11a
             'Psr\\Log\\' => 
             array (
                 0 => __DIR__ . '/..' . '/psr/log',
+            ),
+        ),
+        'D' => 
+        array (
+            'Doctrine\\Common\\Inflector\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/inflector/lib',
             ),
         ),
     );
