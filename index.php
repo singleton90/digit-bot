@@ -9,9 +9,26 @@ echo "<pre>";
 foreach ($response as $update) {
 	if ($update->getMessage()->getText() == '/start') {
 		$telegram->sendMessage([
-				'chat_id' => $update->getMessage()->getChat()->get('id'), 
-  				'text' => 'Hello World'
+				
 			]);
+		$keyboard = [
+		    ['7', '8', '9'],
+		    ['4', '5', '6'],
+		    ['1', '2', '3'],
+		         ['0']
+		];
+
+		$reply_markup = $telegram->replyKeyboardMarkup([
+		  'keyboard' => $keyboard, 
+		  'resize_keyboard' => true, 
+		  'one_time_keyboard' => true
+		]);
+
+		$response = $telegram->sendMessage([
+		  	'chat_id' => $update->getMessage()->getChat()->get('id'), 
+  			'text' => '```Hello World``` + *die!!!*',
+		  	'reply_markup' => $reply_markup
+		]);
 	}
 }
 echo "===<br>";
