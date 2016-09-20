@@ -8,9 +8,6 @@ $response = $telegram->getUpdates();
 echo "<pre>";
 foreach ($response as $update) {
 	if ($update->getMessage()->getText() == '/start') {
-		$telegram->sendMessage([
-				
-			]);
 		$keyboard = [
 		    ['7', '8', '9'],
 		    ['4', '5', '6'],
