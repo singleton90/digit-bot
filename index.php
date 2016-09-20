@@ -4,8 +4,7 @@ use Telegram\Bot\Api;
 
 $telegram = new Api('202559226:AAEu2P5-OTOZMIeSQFDsEF4jizZu2rcTkHM');
 
-$response = $telegram->getUpdates();
-echo "<pre>";
+$response = $telegram->getWebhookUpdates();;
 foreach ($response as $update) {
 	if ($update->getMessage()->getText() == '/start') {
 		$keyboard = [
@@ -28,5 +27,3 @@ foreach ($response as $update) {
 		]);
 	}
 }
-echo "===<br>";
-var_dump($response);
